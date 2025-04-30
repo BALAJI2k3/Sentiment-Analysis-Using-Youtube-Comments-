@@ -10,13 +10,13 @@ import numpy as np
 
 
 # Read the data from the csv file
-df = pd.read_csv('./Tweets.csv')
+df = pd.read_csv('./YoutubeCommentsDataSet.csv')
 ptComments = [] # positive comments list
 ntComments = [] # negative comments list
 nuComments = [] # neutral comments list
 
 # get all comments from the csv file in array format
-comments = np.array(df['text'])
+comments = np.array(df['Comment'])
 
 class SentimentAnalysis:
     def __init__(self, comments):
